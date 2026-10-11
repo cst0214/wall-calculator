@@ -26,4 +26,8 @@ A web app that works out how many **WPC Wall Panels** or **Flexible Tiles** a wa
 - `tools/make-icons.ps1`: regenerates the PNG icons.
 
 ## Publishing
-Put everything except `tools/` and `tests.html` on any **HTTPS** static host, such as Cloudflare Pages, GitHub Pages, or the company website. Phone cameras and "add to home screen" only work over HTTPS.
+Live at **https://cst0214.github.io/wall-calculator/**. GitHub Pages serves this repo's `main` branch. A push to `main` updates the live app in about a minute, so bump `CACHE` in `sw.js` whenever app files change.
+
+The app needs **HTTPS** for phone cameras and "add to home screen", so any other host must use HTTPS too (for example the company website).
+
+Project history, business rules and open items for whoever continues this work are in [CLAUDE.md](CLAUDE.md).
